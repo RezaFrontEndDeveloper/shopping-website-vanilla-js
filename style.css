@@ -35,6 +35,11 @@ html {
 .container {
   width: 1119px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
 }
 body {
   font-family: "iran-yekan";
@@ -180,7 +185,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 700px;
+  height: 550px;
   position: relative;
 }
 .hero-title {
@@ -347,4 +352,10 @@ a {
 }
 .open-menu-mobile {
   cursor: pointer;
+}
+.categories {
+  margin-top: 50px;
+}
+.categories h2 {
+  text-align: center;
 }

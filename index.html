@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="media.css" />
   </head>
   <body>
+    <!-- header -->
     <header>
       <div class="badge">
         <div>
@@ -143,87 +144,94 @@
           </div>
         </div>
       </div>
-    </header>
-    <!-- modal -->
-    <div class="modal">
-      <div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-x preview-icon close-icon"
-        >
-          <path d="M18 6 6 18" />
-          <path d="m6 6 12 12" />
-        </svg>
-      </div>
-      <input type="text" placeholder="جتسجو در محصولات" />
-    </div>
 
-    <!-- سبدخرید  -->
-    <div class="basket">
-      <div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-x preview-icon close-basket close-basket"
-        >
-          <path d="M18 6 6 18" />
-          <path d="m6 6 12 12" />
-        </svg>
+      <!-- سبد خرید -->
+      <div class="basket">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-x preview-icon close-basket close-basket"
+          >
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </div>
+        <div>
+          <h3>سبد خرید شما خالی است</h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-shopping-cart preview-icon"
+          >
+            <path
+              d="m2.05 2.05 1.099-.028a1 1 0 0 1 1.008.815l2.69 14.347A1 1 0 0 0 7.83 18H18"
+            />
+            <path
+              d="M4.563 5h16.435a1 1 0 0 1 .981 1.204l-1.026 6.226A2 2 0 0 1 18.962 14H6.25"
+            />
+            <circle cx="18" cy="20" r="2" />
+            <circle cx="8" cy="20" r="2" />
+          </svg>
+        </div>
       </div>
-      <div>
-        <h3>سبد خرید شما خالی است</h3>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-shopping-cart preview-icon"
-        >
-          <path
-            d="m2.05 2.05 1.099-.028a1 1 0 0 1 1.008.815l2.69 14.347A1 1 0 0 0 7.83 18H18"
-          />
-          <path
-            d="M4.563 5h16.435a1 1 0 0 1 .981 1.204l-1.026 6.226A2 2 0 0 1 18.962 14H6.25"
-          />
-          <circle cx="18" cy="20" r="2" />
-          <circle cx="8" cy="20" r="2" />
-        </svg>
+
+      <!-- modal -->
+      <div class="modal">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-x preview-icon close-icon"
+          >
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </div>
+        <input type="text" placeholder="جتسجو در محصولات" />
       </div>
-    </div>
+    </header>
 
     <!-- main -->
-
-    <section class="hero-section">
-      <div class="hero-section-description">
-        <h1 class="hero-title">فراتر از یک بازی؛ یک چرخهٔ حیات است.</h1>
-        <p>
-          چه به‌تازگی کار را شروع کرده باشید، چه تمام عمر بازی کرده باشید و چه
-          یک بازیکن حرفه‌ای در سطح تور باشید، «سوینگ» (حرکت تاب‌دادن چوب) شما
-          همچون اثر انگشت‌تان است.
-        </p>
-        <button class="btn btn-primary">خرید کنید</button>
+    <main>
+      <div class="contaner">
+        <section class="hero-section">
+          <div class="hero-section-description">
+            <h1 class="hero-title">فراتر از یک بازی؛ یک چرخهٔ حیات است.</h1>
+            <p>
+              چه به‌تازگی کار را شروع کرده باشید، چه تمام عمر بازی کرده باشید و
+              چه یک بازیکن حرفه‌ای در سطح تور باشید، «سوینگ» (حرکت تاب‌دادن چوب)
+              شما همچون اثر انگشت‌تان است.
+            </p>
+            <button class="btn btn-primary">خرید کنید</button>
+          </div>
+        </section>
       </div>
-    </section>
+    </main>
+
+    <!-- footer -->
+    <footer></footer>
 
     <script src="./index.js"></script>
   </body>
