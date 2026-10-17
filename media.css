@@ -33,4 +33,25 @@
   .basket h3 {
     font-size: 0.9rem;
   }
+  .hero-section-description {
+    width: 100%;
+    top: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .hero-section {
+    background-position: right;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+    /* margin-top: 153px; */
+  }
 }
