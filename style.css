@@ -18,6 +18,7 @@
   src: url("./fonts/Peyda-Bold.woff2");
   font-weight: 700;
 }
+
 *,
 *::before,
 *::after {
@@ -31,20 +32,25 @@ html {
   --color-38CB89: #38cb89;
   --color-141718: #141718;
   --color-fff: #fff;
+
+  /* font-size */
+  --text-lg: 20px;
+  --text-md: 15px;
+  --text-sm: 13px;
 }
 .container {
-  width: 1119px;
+  width: 1368px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
 }
 body {
   font-family: "iran-yekan";
   width: 100%;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  font-family: "iran-yekan", sans-serif;
+  font-feature-settings: "ss01";
 }
 h1 {
   font-family: "peyda";
@@ -53,6 +59,9 @@ a {
   text-decoration: none;
   color: var(--color-141718);
   font-family: "iran-yekan";
+}
+ul {
+  list-style: none;
 }
 .link {
   text-decoration: none;
@@ -358,4 +367,168 @@ a {
 }
 .categories h2 {
   text-align: center;
+}
+footer {
+  background-color: var(--color-141718);
+  color: var(--color-fff);
+}
+.footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+.footer-div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding: 15px 10px;
+  gap: 10px;
+}
+.footer-div p {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  list-style: none;
+  font-size: 0.9rem;
+}
+.footer-list-a {
+  text-decoration: none;
+  color: var(--color-fff);
+  font-weight: 300;
+}
+.footer-div span {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.test-number {
+  font-family: "peyda", "iran-yekan", sans-serif;
+}
+.footer-line {
+  border-top: 1px solid var(--color-fff);
+  margin-top: 15px;
+}
+.copy-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copy-right p {
+  margin: 15px 0;
+  font-weight: 500;
+  font-size: var(--text-sm);
+}
+.product-categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  max-width: 1119px;
+  margin: 50px auto;
+  row-gap: 20px;
+}
+.product-categories > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 300ms;
+}
+.product-categories > div img {
+  transition: all 300ms;
+}
+.product-categories > div img:hover {
+  transform: scale(1.2);
+}
+.product-categories > div img {
+  width: 280px;
+  margin-bottom: 20px;
+}
+.product-categories-title {
+  font-family: "peyda";
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  margin: 100px auto 20px auto;
+}
+.hery-up .image {
+  background-image: url("./images/Paste\ image\ \(1\).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #38cb89; */
+  width: 100%;
+  height: 400px;
+}
+.hery-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hery-up .text {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 0px;
+  background-color: var(--color-141718);
+  color: var(--color-fff);
+  width: 100%;
+  padding-right: 30px;
+  gap: 20px;
+}
+.text-up {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+}
+.text-up span:first-child {
+  color: var(--color-38CB89);
+  font-size: 0.8rem;
+}
+.text-up h3 {
+  font-size: 2rem;
+  color: var(--color-fff);
+}
+.text-up span:last-child {
+  font-weight: 300;
+}
+.suggest {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
+  direction: ltr;
+}
+.timer div {
+  background-color: white;
+  color: black;
+  padding: 15px;
+  border: 1px solid gray;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timer-number {
+  font-size: 2rem;
 }

@@ -3,6 +3,14 @@
     grid-template-columns: 1fr 2fr 1fr;
   }
 }
+@media (max-width: 1370px) {
+  .header-header {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  .footer {
+    grid-template-columns: repeat(4, auto);
+  }
+}
 @media (max-width: 760px) {
   nav {
     display: none;
@@ -53,5 +61,8 @@
   .hero-title {
     font-size: 2.5rem;
     /* margin-top: 153px; */
+  }
+  .footer {
+    grid-template-columns: 1fr;
   }
 }
